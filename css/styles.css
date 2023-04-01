@@ -187,17 +187,15 @@ img {
   padding-bottom: 120px;
 }
 
-.features-icons-list {
+.features-item-icon {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
-  gap: 24px;
-  justify-content: space-around;
-  margin-bottom: 8px;
-}
-
-.features-icons-item {
-  padding: 24px 100px;
+  align-items: center;
+  justify-content: center;
   background-color: var(--light-color);
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .features-list {
@@ -351,7 +349,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.customers-item {
+.customers-link {
   width: 168px;
   height: 88px;
   display: flex;
@@ -365,11 +363,11 @@ img {
   fill: var(--subtle-text-color);
 }
 
-.customers-item:is(:hover, :focus) {
+.customers-link:is(:hover, :focus) {
   border: 1px solid var(--pressed-state-color);
 }
 
-.customers-item:is(:hover, :focus) > .customers-icon {
+.customers-link:is(:hover, :focus) > .customers-icon {
   fill: var(--pressed-state-color);
 }
 
